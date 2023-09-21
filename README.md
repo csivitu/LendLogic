@@ -7,5 +7,4 @@
   </a>
 
   <h3 align="center">LendLogic</h3>
-
 </p>
