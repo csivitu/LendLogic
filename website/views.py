@@ -1,8 +1,8 @@
 import pandas as pd
 import joblib
 from flask import Flask,Blueprint,render_template,session,request,redirect,url_for,flash
-
 views = Blueprint('views', __name__)
+
 @views.route("/")
 def form():
     return render_template("form.html")
