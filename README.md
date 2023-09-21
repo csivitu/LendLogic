@@ -6,6 +6,6 @@
     <img src="https://csivit.com/images/favicon.png" alt="Logo" width="80">
   </a>
 
-  <h3 align="center">Minigames</h3>
+  <h3 align="center">LendLogic</h3>
 
 </p>
