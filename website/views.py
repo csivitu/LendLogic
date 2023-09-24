@@ -84,7 +84,7 @@ def predict():
         if property_area == "Urban":
             input_data['Property_Area_Urban'] = True
         
-        loan_model = joblib.load('loanmodel.pkl')
+        loan_model = joblib.load('loanmodel_decision_tree_pruned.pkl')
         predict = loan_model.predict(input_data)
         if predict == [True]:
             prediction = "APPROVED"

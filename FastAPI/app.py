@@ -4,7 +4,7 @@ import joblib
 
 app = FastAPI()
 
-model = joblib.load('../loanmodel.pkl')
+model = joblib.load('loanmodel_decision_tree_pruned.pkl')
 
 class InputData(BaseModel):
     ApplicantIncome: int
