@@ -49,36 +49,3 @@ def predict(data: InputData):
     predictions = model.predict(input_data)
 
     return {"predictions": predictions.tolist()}
-
-@app.route("/predictapi", methods=["GET", "POST"])
-def predictapi():
-    if request.method == "GET":
-        return render_template("form.html")
-    elif request.method == "POST":
-        data = request.form.to_dict()
-
-        input_data = [[
-            int(data["ApplicantIncome"]),
-            int(data["CoapplicantIncome"]),
-            int(data["LoanAmount"]),
-            int(data["Loan_Amount_Term"]),
-            int(data["Credit_History"]),
-            int(data["Gender_Male"]),
-            int(data["Married_Yes"]),
-            int(data["Dependents_0"]),
-            int(data["Dependents_1"]),
-            int(data["Dependents_2"]),
-            int(data["Dependents_3plus"]),
-            int(data["Education_Graduate"]),
-            int(data["Self_Employed_Yes"]),
-            int(data["Property_Area_Rural"]),
-            int(data["Property_Area_Semiurban"]),
-            int(data["Property_Area_Urban"]),
-        ]]
-
-        predictions = model.predict(input_data)
-
-        prediction = predictions[0]
-        prediction_text = "The predicted loan status is {}".format("Approved" if prediction == 1 else "Denied")
-
-        return render_template("predict.html", prediction_text=prediction_text)
