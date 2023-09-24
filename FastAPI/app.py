@@ -1,8 +1,12 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
+<<<<<<< HEAD
 from flask import render_template, request
 from sklearn.preprocessing import MinMaxScaler
+=======
+from flask import render_template, request, jsonify
+>>>>>>> 46586b5c8a3c683ff3ed3f3df0e240bea28a1959
 
 app = FastAPI()
 
@@ -54,24 +58,3 @@ def predict(data: InputData):
     predictions = model.predict(input_data)
 
     return {"predictions": predictions.tolist()}
-
-'''
-{
-    "ApplicantIncome": 4232,
-    "CoapplicantIncome": 24,
-    "LoanAmount": 10,
-    "Loan_Amount_Term": 5,
-    "Credit_History": 1, 
-    "Gender_Male": true,
-    "Married_Yes": false,
-    "Dependents_0": true,
-    "Dependents_1": false,
-    "Dependents_2": true,
-    "Dependents_3plus": false,
-    "Education_Graduate": true,
-    "Self_Employed_Yes": false,
-    "Property_Area_Rural": true,
-    "Property_Area_Semiurban": false,
-    "Property_Area_Urban": true
-}
-'''
