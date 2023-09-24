@@ -1,12 +1,9 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
-<<<<<<< HEAD
 from flask import render_template, request
 from sklearn.preprocessing import MinMaxScaler
-=======
 from flask import render_template, request, jsonify
->>>>>>> 46586b5c8a3c683ff3ed3f3df0e240bea28a1959
 
 app = FastAPI()
 
