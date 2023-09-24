@@ -1,4 +1,3 @@
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -6,63 +5,91 @@
     <img src="https://csivit.com/images/favicon.png" alt="Logo" width="80">
   </a>
 
-  <h3 align="center"><a name="lendlogic"></a>LendLogic</h3>
-  <h4 align="center"><a name="the-crystal-ball-for-loans"></a>the crystal ball for loans 🔮</h4>
+  <h3 align="center">Loan Lending Website</h3>
+
+  <p align="center">
+    This project provides a web-based platform for loan lending. It allows users to apply for loans and manage their loan applications.
+    <br />
+    <a href="https://github.com/csivitu/Template"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/csivitu/Template">View Demo</a>
+    ·
+    <a href="https://github.com/csivitu/Template/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/csivitu/Template/issues">Request Feature</a>
+  </p>
 </p>
 
-## Installation
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-To get started, follow these steps to set up your environment and install project dependencies:
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Roadmap](#roadmap)
+* [Contributing](#contributing)
+* [License](#license)
+* [Contributors](#contributors)
 
-```bash
-# Clone the repository
-git clone https://github.com/csivitu/LendLogic.git
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-# Navigate to the project directory
-cd LendLogic
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-# Create a virtual environment (recommended)
-python -m venv venv
+The Loan Lending Website is designed to simplify the loan application and management process. Users can easily apply for loans, track their application status, and manage their loans online.
 
-# Activate the virtual environment
-# On Windows:
-venv\Scripts\activate
-# On macOS and Linux:
-source venv/bin/activate
+### Built With
 
-# Install project dependencies from requirements.txt
+* Python
+* Django
+* HTML/CSS
+* JavaScript
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* Python
+* Django
+
+### Installation
+
+1. Clone the repo
+```sh
+git clone https://github.com/csivitu/Template.git
+Install dependencies
+sh
+Copy code
 pip install -r requirements.txt
-```
-## Running Jupyter Notebook
+<!-- USAGE EXAMPLES -->
+Usage
+Use this space to show useful examples of how the project can be used. Additional screenshots, code examples, and demos work well in this space. You may also link to more resources.
 
-To run Jupyter Notebook, use the following command:
+For more examples, please refer to the Documentation
 
-```bash
-jupyter notebook
-```
-This will start the Jupyter Notebook server, and you can access it in your web browser by following the provided URL.
+<!-- ROADMAP -->
+Roadmap
+See the open issues for a list of proposed features and known issues.
 
-## Running the Flask App
+<!-- CONTRIBUTING -->
+Contributing
+Contributions are what make the open-source community such an amazing place to be, learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-To run the Flask app, execute the following command:
+Fork the Project
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+Commit your Changes (git commit -m 'feat: Add some AmazingFeature')
+Push to the Branch (git push -u origin feature/AmazingFeature)
+Open a Pull Request
+You are requested to follow the contribution guidelines specified in CONTRIBUTING.md while contributing to the project :smile:.
 
-```bash
-python main.py
-```
-This will start the Flask development server, and your app will be accessible at `http://localhost:5000` in your web browser.
-
-## Running a FastAPI Server and sending a Request to FastAPI
-
-To run the FastAPI server, use the following command:
-
-```bash
-# Incase you are not in the FastAPI folder
-cd FastAPI
-
-# Run the Uvicorn server
-uvicorn app:app --reload
-```
-This will start the FastAPI server, and your API will be accessible at `http://localhost:8000` in your web browser.
-
-To send a request to the FastAPI server, you can use tools like `curl` or API client libraries like `requests`. Alternatively, you can use Postman, which is an application to test APIs utilizing a GUI.
-
+<!-- LICENSE -->
+License
+Distributed under the MIT License. See LICENSE for more information.
