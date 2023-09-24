@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/predict.css">
+    <title>Loan Approval Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Form Responses</h1>
+        <div class="prediction-container">
+            <ul>
+                <li><strong>Gender</strong> {{ responses['Gender'] }}</li>
+                <li><strong>Married</strong> {{ responses['Married'] }}</li>
+                <li><strong>Number of Dependents</strong> {{ responses['Dependents'] }}</li>
+                <li><strong>Education</strong> {{ responses['Education'] }}</li>
+                <li><strong>Self-Employed</strong> {{ responses['Self-Employed'] }}</li>
+                <li><strong>Applicant Income</strong> {{ responses['Applicant Income'] }}</li>
+                <li><strong>Co-Applicant Income</strong> {{ responses['Co-Applicant Income'] }}</li>
+                <li><strong>Loan Amount</strong> {{ responses['Loan Amount'] }}</li>
+                <li><strong>Loan Amount Term</strong> {{ responses['Loan Amount Term'] }}</li>
+                <li><strong>Credit History</strong> {{ responses['Credit History'] }}</li>
+                <li><strong>Property Area</strong> {{ responses['Property Area'] }}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="prediction-result-container">
+        <h1>Prediction</h1>
+        <p>Loan application will be {{ prediction }}</p>
+    </div>
+    <br>
+    <button type="button" class="btn" onclick="home()">BACK</button>
+
+    <script>
+    function home() {
+        window.location.href = '/';
+    }
+    </script>
+    <footer>
+        <p><b>Made with ❤️ by CSI-VIT</b></p>
+    </footer>      
+    </body>
+</html>
