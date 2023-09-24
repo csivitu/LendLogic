@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
+from flask import render_template, request
+from sklearn.preprocessing import MinMaxScaler
 
 app = FastAPI()
 
@@ -44,6 +46,10 @@ def predict(data: InputData):
         int(data.Property_Area_Semiurban),
         int(data.Property_Area_Urban),
     ]]
+
+    #minmaxscaler
+    scaler = MinMaxScaler()
+    input_data = scaler.fit_transform(input_data)
 
     predictions = model.predict(input_data)
 
